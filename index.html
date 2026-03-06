@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Chatbot</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #chatbox { width: 300px; height: 300px; border: 1px solid #ccc; overflow-y: auto; margin: 20px auto; padding: 10px; background: #f9f9f9; }
+        .user { text-align: right; color: blue; }
+        .bot { text-align: left; color: green; }
+        #userInput { width: 250px; padding: 5px; }
+        #logo img {
+              float:left;
+              background: transparent;
+        }
+        .nav-bar{
+            display: flex;
+            font-size:18px;
+            flex-wrap: wrap; 
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+        }
+        .menu{
+            width: auto;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .menu li {
+            margin: 0 15px;
+        } 
+        a {
+            text-decoration: none;
+            color: rgb(2, 5, 7);
+            font-weight: bold;
+        }
+        a:hover {
+            color: rgb(9, 1, 15);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div id="logo">
+          <img src="titan-logo.jpg" alt="Logo">
+        </div>
+        <div class="menu">
+          <ul>
+              <li><a href="home.html">Account</a></li>
+              <li><a href="cart.html">Wishlist</a></li>
+              <li><a href="cart.html">cart</a></li>
+              <li><a href="index1.html">Chatbot</a></li>
+          </ul>
+      </div>
+      </div>
+    <h2>Watch Website Chatbot</h2>
+    <div id="chatbox"></div>
+    <input type="text" id="userInput" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+        function sendMessage() {
+            let userMessage = document.getElementById("userInput").value;
+            if (userMessage.trim() === "") return;
+
+            let chatbox = document.getElementById("chatbox");
+            chatbox.innerHTML += `<p class="user"><b>You:</b> ${userMessage}</p>`;
+            document.getElementById("userInput").value = "";
+
+            fetch("http://127.0.0.1:5000/chatbot", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message: userMessage })
+            })
+            .then(response => response.json())
+            .then(data => {
+                chatbox.innerHTML += `<p class="bot"><b>Bot:</b> ${data.response}</p>`;
+                chatbox.scrollTop = chatbox.scrollHeight; // Auto-scroll
+            })
+            .catch(error => console.error("Error:", error));
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
+        }
+    </script>
+</body>
+</html>

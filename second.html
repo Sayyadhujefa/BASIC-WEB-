@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WATCHES</title>
+    <style>
+        #logo img {
+            float:left;
+            background: transparent;
+        }
+        .nav-bar{
+            display: flex;
+            flex-wrap: wrap;
+            font-size:18px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .menu li {
+            margin: 0 15px;
+        } 
+        a {
+            text-decoration: none;
+            color: rgb(2, 5, 7);
+            font-weight: bold;
+        }
+        a:hover {
+            color: rgb(9, 1, 15);
+        }
+        .navbar1 {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            padding: 10px 0;
+            gap:25px ;
+            flex-wrap: wrap;
+        }
+        .head{
+            background-color: white;
+        }
+        .head ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .head li {
+            margin: 0 15px;
+        } 
+
+        .navbar1 a {
+            text-decoration: none;
+            color: rgb(59, 58, 58);
+            margin: 0 15px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .navbar1 a:hover {
+            color: gray;
+        }
+        footer {
+            background-color: #0c0c0c;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px 20px;
+            
+        }
+        .foot{
+            margin: 10px;
+            padding-left: 40px;
+            
+        }
+        .foot ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: justify;
+        }
+        .foot li {
+            margin: 0 15px;
+            
+        } 
+        footer a {
+            color: white;
+            text-decoration: none;
+        } 
+        footer a:hover {
+            color: #ff007f;
+        }
+        .mid{
+          display: flex;
+          flex-wrap: wrap;
+           
+        }
+        .banner img {
+            width: 100%;
+            display: block;
+        }
+        .filter-section {
+            height: auto ;
+            background-color: white;
+            font-size: large;
+            width: 200px;
+            padding: 10px;
+    }
+
+    .filter-section h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .filter-section label {
+        font-size: 14px;
+        color: #555;
+    }
+
+    .filter-section input[type="checkbox"],
+    .filter-section input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    .price-range {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .color-palette {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+        .col-10{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin:20px,auto ;
+            gap: 20px;
+        }
+        .types1 {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            width: 220px;
+            padding: 15px;
+        }
+        .types1 img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .name1 {
+            font-size: 15px;
+            margin: 10px 0;
+        }
+        .price1 {
+            font-size: 16px;
+            color: #555;
+        }
+        .col-12{
+            flex: 1;
+            margin: 10px;
+        }
+        .new, .new1 {
+            font-size: 30px;
+            text-align: center;
+        }
+        .col-2{
+            height: auto ;
+            background-color: white;
+            font-size: large;
+           
+        }
+
+        [class*="col-"]
+        {
+            width:100% ;
+        }
+        body{background-color:rgb(241, 241, 245) ;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-sizing: border-box;}
+    
+
+        @media only screen and (min-width:680px)
+        {
+           
+       
+           .col-1{width:8.33%;}
+           .col-2{width:16.66%;}
+           .col-3{width:24.99%;}
+           .col-4{width:33.32%;}
+           .col-5{width:41.65%;}
+           .col-6{width:49.99%;}
+           .col-7{width:58.31%;}
+           .col-8{width:66.64%;}
+           .col-9{width:74.98%;}
+           .col-10{width:83.3%;}
+           .col-11{width:91.64%;}
+           .col-12{width:100%;}
+       }
+    </style>
+</head>
+<body>
+      <div class="nav-bar">
+          <div id="logo">
+            <img src="titan-logo.jpg" alt="Logo">
+          </div>
+          <div class="menu">
+            <ul>
+                <li><input type="search" placeholder="search"></li>
+                <li><a href="#footer">Account</a></li>
+                <li><a href="https://www.titan.co.in/shop/offers?lang=en_IN#Wishlist">Wishlist</a></li>
+                <li><a href="https://www.titan.co.in/checkout/cart?lang=en_IN">cart</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="navbar1">
+          <a href="https://www.titan.co.in/shop/watches-for-men?lang=en_IN">MEN</a>
+          <a href="https://www.titan.co.in/shop/watches-for-women?lang=en_IN">WOMEN</a>
+          <a href="https://www.titan.co.in/shop/smart?lang=en_IN">SMART WATCHES</a>
+          <a href="https://www.titan.co.in/shop/premium-watches?lang=en_IN">PREMIUM WATCHES</a>
+          <a href="https://www.titan.co.in/shop/watches?lang=en_IN">WATCHES</a>
+          <a href="https://www.titan.co.in/shop/international-brands?lang=en_IN">INTERNATIONAL BRANDS</a>
+          <a href="https://www.titan.co.in/shop/gifting-watches?lang=en_IN">GIFTING</a>
+          <a href="https://www.titan.co.in/shop/offers?lang=en_IN">SALE</a>
+      </div>
+      <div class="head">
+        <ul>
+            <li><a href="Home.html">Home</a></li>>
+            <li><a href="second.html">Fastrack</a></li>
+            
+        </ul> 
+    </div>
+        <div class="banner">
+            <img src="FT-banner.webp">
+        </div><br>
+        <div class="mid">
+            <div class="filter-section" style="position: relative;">
+                <div class="stik"  style="position: sticky; top:0">
+
+                <h3>Deals & Discounts</h3>
+                <label><input type="checkbox"> All Discounts</label><br>
+                <label><input type="checkbox"> Today's Deals</label>
+        
+                <h3>Brands</h3>
+                <label><input type="checkbox"> Titan</label><br>
+                <label><input type="checkbox"> Fastrack</label><br>
+                <label><input type="checkbox"> casio</label><br>
+                <label><input type="checkbox"> Police</label><br>
+                <label><input type="checkbox"> Sonata</label>
+        
+                <h3>Customer Review</h3>
+                <label><input type="radio" name="review"> ★★★★☆ </label><br>
+                <label><input type="radio" name="review"> ★★★☆☆ </label><br>
+                <label><input type="radio" name="review"> ★★☆☆☆ </label><br>
+                <label><input type="radio" name="review"> ★☆☆☆☆ </label>
+        
+                <h3>Watch Display Type</h3>
+                <label><input type="checkbox"> Analog</label><br>
+                <label><input type="checkbox"> Digital</label><br>
+                <label><input type="checkbox"> Analog-Digital</label><br>
+                <label><input type="checkbox"> Chronograph</label>
+        
+                <h3>Discount</h3>
+                <label><input type="checkbox"> 10% off or more</label><br>
+                <label><input type="checkbox"> 25% off or more</label><br>
+                <label><input type="checkbox"> 50% off or more</label><br>
+                <label><input type="checkbox"> 70% off or more</label>
+        
+                <h3>Watch Band Color</h3>
+                <div class="color-palette">
+                    <span class="color-box" style="background-color: black;"></span>
+                    <span class="color-box" style="background-color: white;"></span>
+                    <span class="color-box" style="background-color: red;"></span>
+                    <span class="color-box" style="background-color: blue;"></span>
+                    <span class="color-box" style="background-color: green;"></span>
+                    
+                </div>
+        
+                <h3>Watch Band Material</h3>
+                <label><input type="checkbox"> Ceramic</label><br>
+                <label><input type="checkbox"> Gold</label><br>
+                <label><input type="checkbox"> Leather</label><br>
+                <label><input type="checkbox"> Stainless Steel</label><br>
+                <label><input type="checkbox"> Rubber</label>
+        
+                <h3>Category</h3>
+                <label><input type="checkbox"> Men's Watches</label><br>
+                <label><input type="checkbox"> Women's Watches</label><br>
+                <label><input type="checkbox"> Smartwatches</label><br>
+                <label><input type="checkbox"> Wearable Technology</label>
+            </div>
+            </div>
+            <div class="col-10">
+                <a href="fast1.html"> <div class="types1">
+                    <img src="relfast1.webp" alt="shop1">
+                    <div class="name1">Fastrack Dezire FX1 with 3.5 CM UltraVU Display with Functional Crown,SingleSync BT Calling
+                        Unisex Watch</div>
+                    <div class="price1">₹ 2,870.00
+                      <strike>  MRP ₹ 3,585.00</strike><br>
+                        20% off</div>
+                </div>
+                </a>
+               
+                <a href="fast2.html"> <div class="types1">
+                    <img src="relfast2.webp" alt="shop1">
+                    <div class="name1">Fastrack Vyb Showstopper Quartz Analog Mother Of Pearl Dial Metal Strap Watch for Girls</div>
+                    <div class="price1">₹ 6,245.00
+                       <strike>MRP ₹ 7,345.00</strike><br>
+                        15% off</div>
+                </div>
+                </a>
+                
+                <a href="fast3.html"> <div class="types1">
+                    <img src="relfast3.webp" alt="shop1">
+                    <div class="name1">Fastrack Thor Quartz Multifunction Red Dial Metal Strap Watch for Guys</div>
+                    <div class="price1">₹ 8,715.00
+                       <strike> MRP ₹ 10,895.00</strike><br>
+                        20% off</div>
+                </div>
+                </a>
+            
+               <a href="fast4.html"> <div class="types1">
+                <img src="relfast4.webp" alt="shop1">
+                    <div class="name1">Fastrack Quartz Analog Black Dial Black Stainless Steel Strap Watch for Guys</div>
+                    <div class="price1">₹ 10,000.00
+                        <strike>MRP ₹ 11,765.00</strike><br>
+                        15% off</div>
+                </div></a>
+                <a href="black.html"> <div class="types1">
+                    <img src="relfast5.webp" alt="shop1">
+                    <div class="name1">Fastrack Ruffles Quartz Analog with Date Beige Dial Stainless Steel Strap Watch for Girls</div>
+                    <div class="price1">₹ 2,870.00
+                      <strike>  MRP ₹ 3,585.00</strike><br>
+                        20% off</div>
+                </div>
+                </a>
+               
+                <a href="gents.html"> <div class="types1">
+                    <img src="relfast6.jpg" alt="shop1">
+                    <div class="name1">Fastrack Kronos Chronograph Black Dial Brown Leather Strap Watch For Guys</div>
+                    <div class="price1">₹ 6,245.00
+                       <strike>MRP ₹ 7,345.00</strike><br>
+                        15% off</div>
+                </div>
+                </a>
+                
+                <a href="xtime.html"> <div class="types1">
+                    <img src="relfast7.jpg" alt="shop1">
+                    <div class="name1">Fastrack Dezire FX1 with 3.5 CM UltraVU Display with Functional Crown,SingleSync BT Calling</div>
+                    <div class="price1">₹ 8,715.00
+                       <strike> MRP ₹ 10,895.00</strike><br>
+                        20% off</div>
+                </div>
+                </a>
+            
+               <a href="apollo.html"> <div class="types1">
+                <img src="relfast8.webp" alt="shop1">
+                    <div class="name1">Fastrack Dezire FX1 with 3.5 CM UltraVU Display with Functional Crown,SingleSync BT Calling
+                    </div>
+                    <div class="price1">₹ 10,000.00
+                        <strike>MRP ₹ 11,765.00</strike><br>
+                        15% off</div>
+                </div></a>
+                <a href="black.html"> <div class="types1">
+                    <img src="relfast9.webp" alt="shop1">
+                    <div class="name1">Fastrack Noir Pro Womens Smartwatch with 3.0 cm Super AMOLED Display, 390x390 Resolution</div>
+                    <div class="price1">₹ 2,870.00
+                      <strike>  MRP ₹ 3,585.00</strike><br>
+                        20% off</div>
+                </div>
+                </a>
+               
+                <a href="gents.html"> <div class="types1">
+                    <img src="relfast10.webp" alt="shop1">
+                    <div class="name1">Fastrack Stunners Quartz Multifunction Rose Gold Dial Stainless Steel Strap Watch for Girls</div>
+                    <div class="price1">₹ 6,245.00
+                       <strike>MRP ₹ 7,345.00</strike><br>
+                        15% off</div>
+                </div>
+                </a>
+                
+                <a href="xtime.html"> <div class="types1">
+                    <img src="relfast11.webp" alt="shop1">
+                    <div class="name1">Fastrack Tick Tock Quartz Multifunction Black Dial Metal Strap Watch for Guys</div>
+                    <div class="price1">₹ 8,715.00
+                       <strike> MRP ₹ 10,895.00</strike><br>
+                        20% off</div>
+                </div>
+                </a>
+            
+               <a href="apollo.html"> <div class="types1">
+                <img src="relfast12.webp" alt="shop1">
+                    <div class="name1">Fastrack Radiant FX4 Premium Metal Smartwatch with 3.8 cm EdgeX AMOLED</div>
+                    <div class="price1">₹ 10,000.00
+                        <strike>MRP ₹ 11,765.00</strike><br>
+                        15% off</div>
+                </div></a>
+                <a href="black.html"> <div class="types1">
+                    <img src="relfast13.webp" alt="shop1">
+                    <div class="name1">Fastrack Vyb Aviator Quartz Analog Black Dial Black Metal Strap Watch For Guys</div>
+                    <div class="price1">₹ 2,870.00
+                      <strike>  MRP ₹ 3,585.00</strike><br>
+                        20% off</div>
+                </div>
+                </a>
+               
+                <a href="gents.html"> <div class="types1">
+                    <img src="relfast14.webp" alt="shop1">
+                    <div class="name1">Fastrack Vyb Mirage Quartz Analog White Dial Stainless Steel Strap Watch for Girls</div>
+                    <div class="price1">₹ 6,245.00
+                       <strike>MRP ₹ 7,345.00</strike><br>
+                        15% off</div>
+                </div>
+                </a>
+                
+                <a href="xtime.html"> <div class="types1">
+                    <img src="relfast15.webp" alt="shop1">
+                    <div class="name1">Fastrack Stunners Quartz Multifunction Rose Gold Dial Stainless Steel Strap Watch for Girls</div>
+                    <div class="price1">₹ 8,715.00
+                       <strike> MRP ₹ 10,895.00</strike><br>
+                        20% off</div>
+                </div>
+                </a>
+                <a href="black.html"> <div class="types1">
+                    <img src="relfast16.webp" alt="shop1">
+                    <div class="name1">Fastrack Vyb Aviator Quartz Analog Black Dial Black Metal Strap Watch For Guys</div>
+                    <div class="price1">₹ 3,870.00
+                      <strike>  MRP ₹ 4,585.00</strike><br>
+                        20% off</div>
+                </div>
+                </a>
+               
+
+
+
+            </div>
+        </div>
+        <div class="footer"><footer>
+            <div class="foot">
+                <ul>
+                    <li><a href="#"><h4>COLLECTION</h4></a></li>
+                    <li><a href="digital.html">Digital Watch</a></li><br>
+                    <li><a href="vintage.html">Vintage Watch</a></li><br>
+                    <li><a href="heart.html">Heart Watch</a></li><br>
+                    <li><a href="police.html">Police Batman</a></li><br>
+                    <li><a href="raga.html"> Raga Power Pearls</a></li><br>
+                </ul>
+            </div>
+            <div class="foot">
+                <ul>
+                    <li><a href="about.html"><h4>ABOUT TITAN</h4></a></li>
+                    <li><a href="#">Brand Protection</a></li><br>
+                    <li><a href="#">Corporate</a></li><br>
+                </ul>
+            </div>
+            <div class="foot">
+               
+                <ul> 
+                    <li><a href="#"><h4>CONTACT US</h4></a></li>
+                    <li><a href="tel:7756937861">7756937861</a></li><br>
+                    <li><a href="mailto:customercare@hs.co.in">customercare@hs.co.in</a></li><br>
+                </ul>
+            </div>
+            <div class="foot">
+                <ul>
+                    <li><a href="#"><h4>CUSTOMER SERVICES</h4></a></li>
+                    <li><a href="#">Payment Options</a></li><br>
+                    <li><a href="#">Track Order</a></li><br>
+                    <li><a href="#">Find Titan World Stores</a></li><br>
+                </ul>
+            </div>
+            </div>
+        </footer>
+        <center><p>&copy; 2025 WATCHES. All Rights Reserved. | <a href="#">Privacy Policy</a></p></center>
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WATCHES</title>
+    <style>
+        #logo img {
+              float:left;
+              background: transparent;
+        }
+        .nav-bar{
+            display: flex;
+            font-size:18px;
+            flex-wrap: wrap; 
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+        }
+        .menu{
+            width: auto;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .menu li {
+            margin: 0 15px;
+        } 
+        a {
+            text-decoration: none;
+            color: rgb(2, 5, 7);
+            font-weight: bold;
+        }
+        a:hover {
+            color: rgb(9, 1, 15);
+        }
+        .banner img {
+            width: 100%;
+            display: block;
+        }
+        .catagories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+            gap: 20px;
+        }
+        .types {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            width: 280px;
+            padding: 15px;
+        }
+        .types img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .catagories1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+            gap: 20px;
+        }
+        .types1 {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            width: 280px;
+            padding: 15px;
+        }
+        .types1 img {
+            height: auto;
+            border-radius: 4px;
+            width: 100%;
+        }
+        .name1 {
+            font-size: 15px;
+            margin: 10px 0;
+        }
+        .price1 {
+            font-size: 16px;
+            color: #555;
+        }
+        .types2 {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            width: 250px;
+            padding: 15px;
+        }
+        .types2 img {
+            height: auto;
+            border-radius: 4px;
+        }
+        footer {
+            background-color: #0c0c0c;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px 20px;
+            
+        }
+        .foot{
+            margin: 30px;
+            padding-left: 40px;
+            
+        }
+        .foot ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: justify;
+        }
+        .foot li {
+            margin: 0 15px;
+            
+        } 
+        footer a {
+            color: white;
+            text-decoration: none;
+        } 
+        footer a:hover {
+            color: #ff007f;
+        }
+        .new, .new1 {
+            font-size: 30px;
+            text-align: center;
+        }
+        .new1 {
+            font-size: 30px;
+            text-align: center;
+        }
+        .product_buy {
+            display: flex;
+            flex-wrap: wrap;
+            padding:10px;
+        }
+
+        .product_buy img {
+            height:185px ;
+            width: 100%;
+        }
+        .video {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px; 
+            padding: 10px;
+        }
+        .navbar1 {
+         display: flex;
+         justify-content: center;
+         background-color: white;
+         padding: 10px 0;
+         gap: 25px;
+         border-bottom: 1px solid #ccc;
+         flex-wrap: wrap; 
+        }
+
+        .navbar1 a {
+            text-decoration: none;
+            color: rgb(59, 58, 58);
+            margin: 0 15px;
+            font-size: 15px;
+        }
+
+        .navbar1 a:hover {
+            color: gray;
+        }
+        section{
+            padding:10px ;
+            margin-left:50px ;
+        }
+        .style{
+            display: flex;
+            flex-wrap: wrap;
+            gap:10px ;
+            padding-left:10px ;
+            margin-left: 10px;
+        }
+        [class*="col-"]
+        {
+            width:100% ;
+        }
+        body{background-color:rgb(241, 241, 245) ;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-sizing: border-box;
+        }
+    
+
+        @media only screen and (min-width:680px)
+        {
+           
+       
+           .col-1{width:8.33%;}
+           .col-2{width:16.66%;}
+           .col-3{width:24.99%;}
+           .col-4{width:33.32%;}
+           .col-5{width:41.65%;}
+           .col-6{width:49.99%;}
+           .col-7{width:58.31%;}
+           .col-8{width:66.64%;}
+           .col-9{width:74.98%;}
+           .col-10{width:83.3%;}
+           .col-11{width:91.64%;}
+           .col-12{width:100%;}
+       }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div id="logo">
+          <img src="titan-logo.jpg" alt="Logo">
+        </div>
+        <div class="menu">
+          <ul>
+              <li><input type="search" placeholder="search"></li>
+              <li><a href="account.html">Account</a></li>
+              <li><a href="cart.html">Wishlist</a></li>
+              <li><a href="cart.html">cart</a></li>
+              <li><a href="index.html">Chatbot</a></li>
+          </ul>
+      </div>
+      </div>
+      <div class="navbar1">
+        <a href="https://www.titan.co.in/shop/watches-for-men?lang=en_IN">MEN</a>
+        <a href="https://www.titan.co.in/shop/watches-for-women?lang=en_IN">WOMEN</a>
+        <a href="https://www.titan.co.in/shop/smart?lang=en_IN">SMART WATCHES</a>
+        <a href="https://www.titan.co.in/shop/premium-watches?lang=en_IN">PREMIUM WATCHES</a>
+        <a href="https://www.titan.co.in/shop/watches?lang=en_IN">WATCHES</a>
+        <a href="https://www.titan.co.in/shop/international-brands?lang=en_IN">INTERNATIONAL BRANDS</a>
+        <a href="https://www.titan.co.in/shop/gifting-watches?lang=en_IN">GIFTING</a>
+        <a href="https://www.titan.co.in/shop/offers?lang=en_IN">SALE</a>
+    </div>
+    
+    <div class="banner">
+        <img src="banner.jpg" alt="banner">
+    </div>
+    <div class="new"><CENTER>SHOP BY BRANDS</CENTER></div>
+    
+    <div class="catagories">
+        
+       
+        <a href="first.html"> <div class="types">
+            <img src="tit1.webp" alt="Black Jet Watch">
+         
+        </div>
+        </a>
+       
+        <a href="second.html"> <div class="types">
+            <img src="tit2.webp" alt="Black Jet Watch">
+         
+        </div>
+        </a>
+        
+        <a href="third.html"> <div class="types">
+            <img src="tit3.webp" alt="Black Jet Watch">
+         
+        </div>
+        </a>
+    
+       <a href="four.html"> <div class="types">
+        <img src="tit4.webp" alt="Black Jet Watch">
+        </div></a>
+
+        <a href="five.html"> <div class="types">
+            <img src="tit5.webp" alt="Black Jet Watch">
+         
+        </div>
+        </a>
+       
+        <a href="gents.html"> <div class="types">
+            <img src="tit6.jpg" alt="Black Jet Watch">
+         
+        </div>
+        </a>
+        
+        <a href="xtime.html"> <div class="types">
+            <img src="tit7.webp" alt="Black Jet Watch">
+         
+        </div>
+        </a>
+    
+       <a href="apollo.html"> <div class="types">
+        <img src="tit8.webp" alt="Black Jet Watch">
+         
+        </div></a>
+    </div>
+    <div class="new1"><center>DISCOVER YOUR STYLE</center></div>
+    <div class="style">
+        <a href="1.html"> <div class="typ">
+            <img src="home\dis1.webp" alt="Black Jet Watch" width="320px">
+         
+        </div>
+        </a>
+       
+        <a href="2.html"> <div class="typ">
+            <img src="home\dis2.webp" alt="Black Jet Watch" width="320px">
+         
+        </div>
+        </a>
+        
+        <a href="3.html"> <div class="typ">
+            <img src="home\dis3.webp" alt="Black Jet Watch"width="320px">
+         
+        </div>
+        </a>
+    
+       <a href="4.html"> <div class="typ">
+        <img src="home\dis4.webp" alt="Black Jet Watch" width="320px">
+        </div></a>
+    </div>
+    <div class="new1"><center>BEST SELLING PRODUCTS</center></div>
+    
+    <div class="catagories1">
+        
+       
+        <a href="black.html"> <div class="types1">
+            <img src="titb1.jpg" alt="shop1">
+            <div class="name1">Titan Men's Multifunction Karishma: Two-Tone Steel Elegance Watch</div>
+            <div class="price1">₹ 2,870.00
+              <strike>  MRP ₹ 3,585.00</strike><br>
+                20% off</div>
+        </div>
+        </a>
+       
+        <a href="gents.html"> <div class="types1">
+            <img src="titb2.webp" alt="shop1">
+            <div class="name1">Titan Neo Splash Quartz Multifunction  Stainless Steel Strap Watch for Men</div>
+            <div class="price1">₹ 6,245.00
+               <strike>MRP ₹ 7,345.00</strike><br>
+                15% off</div>
+        </div>
+        </a>
+        
+        <a href="xtime.html"> <div class="types1">
+            <img src="titb3.webp" alt="shop1">
+            <div class="name1">Titan Grandmaster Brown Dial Analog Stainless Steel Strap Watch for Men</div>
+            <div class="price1">₹ 8,715.00
+               <strike> MRP ₹ 10,895.00</strike><br>
+                20% off</div>
+        </div>
+        </a>
+    
+       <a href="apollo.html"> <div class="types1">
+        <img src="titb4.jpg" alt="shop1">
+            <div class="name1">Titan Octane Black Dial Chronograph Watch for Men</div>
+            <div class="price1">₹ 10,000.00
+                <strike>MRP ₹ 11,765.00</strike><br>
+                15% off</div>
+        </div></a>
+    </div>
+    <div class="new"><center>MOST LOVED BRANDS</center></div>
+    <div class="video">
+        <a href="video" > <video width="410px" autoplay loop muted>
+          <source src="most love.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video></a>
+        <a href="video" > <video width="410px" autoplay loop muted>
+            <source src="most love 2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video></a>
+        <a href="video" > <video width="410px" autoplay loop muted>
+            <source src="most love3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video></a>
+    </div>
+    <div class="new"><center>THE BEST WAY TO BUY THE PRODUCTS YOU LOVE</center></div>
+    <div class="product_buy">
+       <a href="men.html"><img src="men.webp"></a>
+       <a href="women.html"> <img src="women.webp"></a>
+       <a href="bestsel.html"> <img src="Bestseller.webp"></a>
+       <a href="https://www.titan.co.in/shop/couple-watches?lang=en_IN"> <img src="couple.webp"></a>
+       <a href="kids.html"> <img src="kids.webp"></a>
+    </div>
+    <div class="footer"><footer>
+        <div class="foot">
+            <ul>
+                <li><a href="#"><h4>COLLECTION</h4></a></li>
+                <li><a href="digital.html">Digital Watch</a></li><br>
+                <li><a href="vintage.html">Vintage Watch</a></li><br>
+                <li><a href="heart.html">Heart Watch</a></li><br>
+                <li><a href="police.html">Police Batman</a></li><br>
+                <li><a href="raga.html"> Raga Power Pearls</a></li><br>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><a href="about.html"><h4>ABOUT TITAN</h4></a></li>
+                <li><a href="#">Brand Protection</a></li><br>
+                <li><a href="#">Corporate</a></li><br>
+            </ul>
+        </div>
+        <div class="foot">
+           
+            <ul> 
+                <li><a href="#"><h4>CONTACT US</h4></a></li>
+                <li><a href="tel:7756937861">7756937861</a></li><br>
+                <li><a href="mailto:customercare@hs.co.in">customercare@hs.co.in</a></li><br>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><a href="#"><h4>CUSTOMER SERVICES</h4></a></li>
+                <li><a href="payment.html">Payment Options</a></li><br>
+                <li><a href="track_order.html">Track Order</a></li><br>
+                <li><a href="#">Find Titan World Stores</a></li><br>
+            </ul>
+        </div>
+        </div>
+    </footer>
+    <center><p>&copy; 2025 WATCHES. All Rights Reserved. | <a href="#">Privacy Policy</a></p></center>
+</div>
+</body>
+</html>

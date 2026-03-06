@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Payment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    .details {
+      background: #f7f7f7;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    button {
+      width: 100%;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Payment Details</h2>
+    <div class="details">
+      <p><strong>Product Name:</strong> Titan Men's Multifunction Karishma Watch</p>
+      <p><strong>Price:</strong> Rs. 3,195</p>
+    </div>
+    <button onclick="fakePay()">Pay Now</button>
+  </div>
+
+  <script>
+    function fakePay() {
+      alert("✅ Payment Successful!\nThank you for your purchase.");
+      // Redirect or update page content if needed
+    }
+  </script>
+
+</body>
+</html>
